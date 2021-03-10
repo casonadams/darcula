@@ -1,8 +1,4 @@
-// For simplicity, assume RGB space is perceptually uniform.
-// There are 5 places where one of two outputs needs to be chosen when the
-// input is the exact middle:
-// - The r/g/b channels and the gray value: the higher value output is chosen.
-// - If the gray and color have same distance from the input - color is chosen.
+#!/usr/bin/env node
 
 var chalk = require("chalk");
 
