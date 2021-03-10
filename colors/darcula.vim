@@ -13,10 +13,16 @@ endif
 
 let g:colors_name='darcula'
 
+let s:darcula_bg_gui = "#2B2B2B"
+let s:darcula_bg_cterm = 236
+
+let s:darcula_fg_gui = "#A9B7C6"
+let s:darcula_fg_cterm = 146
+
 let s:p={
       \ 'null': ['NONE', 'NONE'],
-      \ 'bg': ['#2B2B2B', 235],
-      \ 'fg': ['#A9B7C6', 145],
+      \ 'bg': [s:darcula_bg_gui, s:darcula_bg_cterm],
+      \ 'fg': [s:darcula_fg_gui, s:darcula_fg_cterm],
       \ 'cursor': ['#BBBBBB', 250],
       \ 'identifierUnderCaret': ['#344134', 237],
       \ 'identifierUnderCaretWrite': ['#40332B', 58],
@@ -26,7 +32,7 @@ let s:p={
       \ 'cursorLineNr': ['#A4A3A3', 248],
       \ 'errorMsg': ['#CC666E', 174],
       \ 'error': ['#BC3F3C', 131],
-      \ 'warning': ['#A9B7C6', 145],
+      \ 'warning': [s:darcula_fg_gui, s:darcula_fg_cterm],
       \ 'muted': ['#606060', 241],
       \ 'link': ['#287BDE', 32],
       \ 'stdOutput': ['#BBBBBB', 250],
@@ -283,57 +289,6 @@ if has('nvim')
   let g:terminal_color_13 = s:p.ANSIBrightMagenta[0]
   let g:terminal_color_14 = s:p.ANSIBrightCyan[0]
   let g:terminal_color_15 = s:p.ANSIWhite[0]
-
-  " Tree-sitter
-  hi! link TSAnnotation Normal
-  hi! link TSAttribute Normal
-  hi! link TSBoolean Keyword
-  hi! link TSCharacter Character
-  hi! link TSComment Comment
-  hi! link TSConstructor Function
-  hi! link TSConditional Keyword
-  hi! link TSConstant Constant
-  hi! link TSConstBuiltin Keyword
-  hi! link TSConstMacro cMacroName
-  hi! link TSError codeError
-  hi! link TSException codeError
-  hi! link TSField InstanceField
-  hi! link TSFloat Number
-  hi! link TSFunction Function
-  hi! link TSFuncBuiltin Normal
-  hi! link TSFuncMacro cMacroName
-  hi! link TSInclude PreProc
-  hi! link TSKeyword Keyword
-  hi! link TSKeywordFunction Keyword
-  hi! link TSLabel Normal
-  hi! link TSMethod Function
-  hi! link TSNamespace cDataStructure
-  hi! link TSNone Keyword
-  hi! link TSNumber Number
-  hi! link TSOperator Normal
-  hi! link TSParameter Normal
-  hi! link TSParameterReference Normal
-  hi! link TSProperty TSField
-  hi! link TSPunctDelimiter Normal
-  hi! link TSPunctBracket Normal
-  hi! link TSPunctSpecial Keyword
-  hi! link TSRepeat Keyword
-  hi! link TSString String
-  hi! link TSStringRegex Number
-  hi! link TSStringEscape Keyword
-  hi! link TSTag htmlTag
-  hi! link TSTagDelimiter htmlTag
-  hi! link TSText Normal
-  call s:Hi('TSEmphasis', s:p.fg, s:p.null, 'bold')
-  call s:Hi('TSUnderline', s:p.fg, s:p.null, 'underline')
-  call s:Hi('TSStrike', s:p.fg, s:p.null, 'strikethrough')
-  call s:Hi('TSTitle', s:p.fg, s:p.null, 'bold,underline')
-  hi! link TSLiteral Normal
-  hi! link TSURI markdownLinkText
-  hi! link TSType Normal
-  hi! link TSTypeBuiltin Keyword
-  hi! link TSVariable Normal
-  hi! link TSVariableBuiltin Keyword
 
   " LSP
   hi! link LspDiagnosticsError CodeError
