@@ -4,10 +4,19 @@
 // - The r/g/b channels and the gray value: the higher value output is chosen.
 // - If the gray and color have same distance from the input - color is chosen.
 
+var chalk = require("chalk");
+
 var args = process.argv;
 
 color = hexToRgb(args[2]);
-console.log(RgbToX256(color.r, color.g, color.b));
+xcolor = RgbToX256(color.r, color.g, color.b);
+
+console.log(
+  `${args[2]} => `,
+  chalk.bgHex(args[2])("      "),
+  `\x1b[48;5;${xcolor}m      \x1b[0m`,
+  ` <= ${xcolor}`
+);
 
 function hexToRgb(hex) {
   var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
