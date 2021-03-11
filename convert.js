@@ -5,7 +5,7 @@ var chalk = require("chalk");
 var args = process.argv;
 
 color = hexToRgb(args[2]);
-xcolor = RgbToX256(color.r, color.g, color.b);
+xcolor = parseInt(RgbToX256(color.r, color.g, color.b), 10);
 
 console.log(
   `${args[2]} => `,
