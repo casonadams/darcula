@@ -294,20 +294,20 @@ if has('nvim')
   let g:terminal_color_15 = s:p.ANSIWhite[0]
 
   " LSP
-  hi! link LspDiagnosticsDefaultError CodeError
-  hi! link LspDiagnosticsSignError ErrorSign
+  hi! link LspDiagnosticsDefaultError Pmenu
+  hi! link LspDiagnosticsDefaultHint Pmenu
+  hi! link LspDiagnosticsDefaultInformation Pmenu
+  hi! link LspDiagnosticsDefaultWarning Pmenu
   hi! link LspDiagnosticsErrorFloating CodeError
-  hi! link LspDiagnosticsDefaultWarning CodeWarning
+  hi! link LspDiagnosticsHintFloating CodeHint
+  hi! link LspDiagnosticsInformationFloating CodeInfo
+  hi! link LspDiagnosticsSignError ErrorSign
+  hi! link LspDiagnosticsSignHint HintSign
+  hi! link LspDiagnosticsSignInformation InfoSign
   hi! link LspDiagnosticsSignWarning WarningSign
   hi! link LspDiagnosticsWarningFloating CodeWarning
-  hi! link LspDiagnosticsDefaultInformation CodeInfo 
-  hi! link LspDiagnosticsSignInformation InfoSign
-  hi! link LspDiagnosticsInformationFloating CodeInfo
-  hi! link LspDiagnosticsDefaultHint CodeHint
-  hi! link LspDiagnosticsSignHint HintSign
-  hi! link LspDiagnosticsHintFloating CodeHint
-  hi! link LspReferenceText IdentifierUnderCaret
   hi! link LspReferenceRead IdentifierUnderCaret
+  hi! link LspReferenceText IdentifierUnderCaret
   hi! link LspReferenceWrite IdentifierUnderCaretWrite
 endif
 
