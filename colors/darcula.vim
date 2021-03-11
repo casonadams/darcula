@@ -295,16 +295,16 @@ if has('nvim')
 
   " LSP
   hi! link LspDiagnosticsError CodeError
-  hi! link LspDiagnosticsErrorSign ErrorSign
+  hi! link LspDiagnosticsSignError ErrorSign
   hi! link LspDiagnosticsErrorFloating CodeError
   hi! link LspDiagnosticsWarning CodeWarning
-  hi! link LspDiagnosticsWarningSign WarningSign
+  hi! link LspDiagnosticsSignWarning WarningSign
   hi! link LspDiagnosticsWarningFloating CodeWarning
   hi! link LspDiagnosticsInformation CodeInfo 
-  hi! link LspDiagnosticsInformationSign InfoSign
+  hi! link LspDiagnosticsSignInformation InfoSign
   hi! link LspDiagnosticsInformationFloating CodeInfo
   hi! link LspDiagnosticsHint CodeHint
-  hi! link LspDiagnosticsHintSign HintSign
+  hi! link LspDiagnosticsSignHint HintSign
   hi! link LspDiagnosticsHintFloating CodeHint
   hi! link LspReferenceText IdentifierUnderCaret
   hi! link LspReferenceRead IdentifierUnderCaret
