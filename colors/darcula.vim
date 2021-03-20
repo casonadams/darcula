@@ -184,7 +184,7 @@ call s:Hi('Include', s:p.keyword)
 
 call s:Hi('Conditional', s:p.keyword)
 call s:Hi('Repeat', s:p.keyword)
-call s:Hi('Label', s:p.fg)
+call s:Hi('Label', s:p.constant)
 call s:Hi('Operator', s:p.fg)
 call s:Hi('Keyword', s:p.keyword)
 call s:Hi('Exception', s:p.keyword)

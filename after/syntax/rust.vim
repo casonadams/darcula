@@ -414,14 +414,14 @@ highlight default link rsCrateMacro rsUserMacro
 highlight default link rsCrateType rsUserType
 highlight default link rsDelimiter Delimiter
 highlight default link rsDocComment SpecialComment
-highlight default link rsFieldAccess Normal
+highlight default link rsFieldAccess Identifier
 highlight default link rsFloat Float
 highlight default link rsForeignConst Constant
 highlight default link rsForeignFunc Function
 highlight default link rsForeignMacro Macro
 highlight default link rsForeignType Type
 highlight default link rsFuncDef Function
-highlight default link rsIdentDef Identifier
+highlight default link rsIdentDef Label
 highlight default link rsInclude Include
 highlight default link rsKeyword Keyword
 highlight default link rsLibraryConst Constant
@@ -438,7 +438,7 @@ highlight default link rsString String
 highlight default link rsTypeDef Typedef
 highlight default link rsUserConst Constant
 highlight default link rsUserFunc Function
-highlight default link rsUserIdent Identifier
+highlight default link rsUserIdent Label
 highlight default link rsUserLifetime Special
 highlight default link rsUserMacro Macro
 highlight default link rsUserType Type
