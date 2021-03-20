@@ -591,7 +591,7 @@ hi! link rustTypeParameter Constant
 hi! link rustModPath NormalFg
 hi! link rustModPathSep NormalFg
 hi! link rustAs Keyword
-call s:Hi('rustField', s:p.contant)
+call s:Hi('rustField', s:p.constant)
 hi! link rustConst Constant
 " hi! link rustVarField NormalFg
 " hi! link rustDeriveTrait NormalFg
