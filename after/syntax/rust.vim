@@ -414,7 +414,7 @@ highlight default link rsCrateMacro rsUserMacro
 highlight default link rsCrateType rsUserType
 highlight default link rsDelimiter Delimiter
 highlight default link rsDocComment SpecialComment
-highlight default link rsFieldAccess Identifier
+highlight default link rsFieldAccess Normal
 highlight default link rsFloat Float
 highlight default link rsForeignConst Constant
 highlight default link rsForeignFunc Function
