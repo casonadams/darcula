@@ -1,38 +1,48 @@
-## Darcula
+# Darcula
 
 ![darcula](./img/full_screen.png)
 
 :smiling_imp: A [Vim](https://www.vim.org/)/[Neovim](https://neovim.io/) color scheme reproduction of the official [JetBrains](https://www.jetbrains.com/) IDE Darcula theme
 
-### install
+## install
+
 If you use a plugin manager, follow the traditional way.
 
 For example with [vim-plug](https://github.com/junegunn/vim-plug) add this in `.vimrc`/`init.vim`:
-```
+
+```vim
 Plug 'doums/darcula'
 ```
 
 Then run in vim:
-```
+
+```vim
 :source $MYVIMRC
 :PlugInstall
 ```
+
 If you use vim package `:h packages`.
 
 ### usage
+
 Put this in your `.vimrc`/`init.vim`:
-```
+
+```vim
 colorscheme darcula
 ```
+
 To fully enjoy the color scheme and if your terminal supports [Truecolor](https://gist.github.com/XVilka/8346728) add
-```
+
+```vim
 set termguicolors
 ```
 
 If you use [lightline](https://github.com/itchyny/lightline.vim):
-```
+
+```vim
 let g:lightline = { 'colorscheme': 'darculaOriginal' }
 ```
+
 NOTE: lightline already provides a "darcula" color scheme that I find simply bad. I strongly recommend to use mine instead (using `darculaOriginal` instead of `darcula` in the above config).
 
 **tree-sitter** support
@@ -40,6 +50,7 @@ NOTE: lightline already provides a "darcula" color scheme that I find simply bad
 [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 
 ### support
+
 - Truecolor
 - 256 color
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
@@ -48,24 +59,29 @@ NOTE: lightline already provides a "darcula" color scheme that I find simply bad
 ### VimScript API
 
 #### darcula#palette
+
 the colors palette of Darcula
 
 #### darcula#Hi
+
 helper function to create/modify highlight group
 
-#### example:
-```
+#### example
+
+```vim
 call darcula#Hi('rustLifetime', darcula#palette.macroName, darcula#palette.bg, 'italic')
 call darcula#Hi('Comment', [ '#eeeeee', 255 ], darcula#palette.null, 'italic')
 call darcula#Hi('BlackFg', [ '#000000', 16 ])
 ```
 
 ### helper groups
+
 Darcula provides some helper groups.\
 You can use them with `hi link`.
 
 [GitGutter](https://github.com/airblade/vim-gitgutter)
-```
+
+```vim
 hi! link GitGutterAdd GitAddStripe
 hi! link GitGutterChange GitChangeStripe
 hi! link GitGutterDelete GitDeleteStripe
@@ -73,7 +89,8 @@ let g:gitgutter_sign_removed = '▶'
 ```
 
 [Coc](https://github.com/neoclide/coc.nvim)
-```
+
+```vim
 hi! link CocErrorSign ErrorSign
 hi! link CocWarningSign WarningSign
 hi! link CocInfoSign InfoSign
@@ -92,7 +109,8 @@ hi! link CocHintHighlight CodeHint
 ```
 
 [ALE](https://github.com/dense-analysis/ale)
-```
+
+```vim
 hi! link ALEError Error
 hi! link ALEWarning CodeWarning
 hi! link ALEInfo CodeInfo
@@ -102,7 +120,11 @@ hi! link ALEInfoSign InfoSign
 ```
 
 ### credits
+
 [JetBrains](https://www.jetbrains.com/) for the original and awsome Darcula color scheme!
 
 ### license
+
 Mozilla Public License 2.0
+
+see `:h group-name`
