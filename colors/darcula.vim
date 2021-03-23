@@ -184,7 +184,7 @@ call s:Hi('Include', s:p.keyword)
 
 call s:Hi('Conditional', s:p.keyword)
 call s:Hi('Repeat', s:p.keyword)
-call s:Hi('Label', s:p.constant)
+call s:Hi('Label', s:p.fg)
 call s:Hi('Operator', s:p.fg)
 call s:Hi('Keyword', s:p.keyword)
 call s:Hi('Exception', s:p.keyword)
@@ -571,3 +571,30 @@ call s:Hi('InstanceField', s:p.constant)
 
  " help
  hi! link helpHyperTextJump Number
+
+
+" Rust
+hi! link rustQuestionMark Keyword
+hi! link rustComma Keyword
+hi! link rustSemicolon Keyword
+
+hi! link rustOperator NormalFg
+hi! link rustAssert Macro
+hi! link rustPanic Macro
+hi! link rustEscape Keyword
+
+hi! link rustSigil NormalFg
+hi! link rustSelf Keyword
+call s:Hi('rustLifetime', s:p.rustLifetime, s:p.null, 'italic')
+" call s:Hi('rustTypeParameter', s:p.rustLifetime)
+hi! link rustTypeParameter Constant
+hi! link rustModPath NormalFg
+hi! link rustModPathSep NormalFg
+hi! link rustAs Keyword
+call s:Hi('rustFieldIndent', s:p.constant)
+hi! link rustConst Constant
+hi! link rustVarField NormalFg
+hi! link rustVar Comment
+hi! link rustDeriveTrait NormalFg
+" hi! link rustIdentifier Constant
+" hi! link rustKeyword Keyword
