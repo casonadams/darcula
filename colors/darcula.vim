@@ -572,7 +572,6 @@ call s:Hi('InstanceField', s:p.constant)
  " help
  hi! link helpHyperTextJump Number
 
-
 " Rust
 hi! link rustQuestionMark Keyword
 hi! link rustComma Keyword
@@ -586,7 +585,7 @@ hi! link rustEscape Keyword
 hi! link rustSigil NormalFg
 hi! link rustSelf Keyword
 call s:Hi('rustLifetime', s:p.rustLifetime, s:p.null, 'italic')
-" call s:Hi('rustTypeParameter', s:p.rustLifetime)
+call s:Hi('rustTypeParameter', s:p.rustLifetime)
 hi! link rustTypeParameter Constant
 hi! link rustModPath NormalFg
 hi! link rustModPathSep NormalFg
@@ -596,5 +595,5 @@ hi! link rustConst Constant
 hi! link rustVarField NormalFg
 hi! link rustVar Comment
 hi! link rustDeriveTrait NormalFg
-" hi! link rustIdentifier Constant
-" hi! link rustKeyword Keyword
+hi! link rustEnumVariant Constant
+hi! link rustKeyword Keyword
