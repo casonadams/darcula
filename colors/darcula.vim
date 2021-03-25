@@ -597,3 +597,11 @@ hi! link rustVar Comment
 hi! link rustDeriveTrait NormalFg
 hi! link rustEnumVariant Constant
 hi! link rustKeyword Keyword
+
+" Golang
+hi! link goDirective Macro
+hi! link goConstants Constant
+hi! link goDeclaration ErrorMsg
+hi! link goDeclType Number
+hi! link goBuiltins Type
+
