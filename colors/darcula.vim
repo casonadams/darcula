@@ -601,7 +601,7 @@ hi! link rustKeyword Keyword
 " Golang
 hi! link goDirective Macro
 hi! link goConstants Constant
-" hi! link goDeclaration ErrorMsg
+hi! link goDeclaration Function
 hi! link goDeclType Number
 hi! link goBuiltins Type
 hi! link goDecimalInt Constant
@@ -610,4 +610,4 @@ hi! link goOctalInt Constant
 hi! link goFloat Constant
 hi! link goExtraType Type
 hi! link goOperator Type
-hi! link goPackage Function
+hi! link goPackage ErrorMsg
