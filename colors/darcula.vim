@@ -610,3 +610,4 @@ hi! link goOctalInt Constant
 hi! link goFloat Constant
 hi! link goExtraType Type
 hi! link goOperator Type
+hi! link goPackage Number
