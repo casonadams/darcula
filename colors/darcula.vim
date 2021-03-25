@@ -604,4 +604,9 @@ hi! link goConstants Constant
 hi! link goDeclaration ErrorMsg
 hi! link goDeclType Number
 hi! link goBuiltins Type
-
+hi! link goConstants Constant
+hi! link goDecimalInt Constant
+hi! link goHexadecimalInt Constant
+hi! link goOctalInt Constant
+hi! link goFloat Constant
+hi! link goExtraType Type
