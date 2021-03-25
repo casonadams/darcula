@@ -3,6 +3,7 @@ syn match goExtraType /\<io\.\(Reader\|Writer\|ReadWriter\|ReadWriteCloser\)\>/
 syn match goExtraType /\<reflect\.\(Kind\|Type\|Value\)\>/
 syn match goExtraType /\<unsafe\.Pointer\>/
 syn match goOperator display "\%(+\|-\|/\|*\|=\|\^\|&\||\|!\|>\|<\|%\)=\?"
-syn keyword goNil nil
+syn keyword goConstants iota true false nil
+
 
 
