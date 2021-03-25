@@ -51,6 +51,7 @@ let s:p={
       \ 'keyword': ['#CC7832', 172],
       \ 'boolean': ['#CC7832', 172],
       \ 'comment': ['#808080', 244],
+      \ 'package': ['#8888C6', 104],
       \ 'docComment': ['#629755', 65],
       \ 'string': ['#6A8759', 101],
       \ 'number': ['#6897BB', 103],
@@ -610,4 +611,4 @@ hi! link goOctalInt Constant
 hi! link goFloat Constant
 hi! link goExtraType Type
 hi! link goOperator Type
-hi! link goPackage ErrorMsg
+call s:Hi('goPackage', s:p.package)
