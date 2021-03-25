@@ -608,5 +608,6 @@ hi! link goDecimalInt Constant
 hi! link goHexadecimalInt Constant
 hi! link goOctalInt Constant
 hi! link goFloat Constant
+hi! link goNil Constant
 hi! link goExtraType Type
-hi! link goOp Type
+hi! link goOperator Type
