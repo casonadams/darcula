@@ -13,7 +13,7 @@ hi Bold         gui=bold    guifg=NONE      guibg=NONE
 
 hi Visual       gui=NONE    guifg=NONE      guibg=#214283
 hi CursorLine   gui=NONE    guifg=NONE      guibg=#323232
-hi CursorLineNr gui=bold    guifg=NONE      guibg=#A4A3A3
+hi CursorLineNr gui=bold    guifg=NONE      guibg=#323232
 hi VertSplit    gui=NONE    guifg=#606060   guibg=NONE
 hi MatchParen   gui=NONE    guifg=NONE      guibg=#3B5140
 hi Pmenu        gui=NONE    guifg=NONE      guibg=#46484A
