@@ -612,3 +612,15 @@ hi! link goFloat Constant
 hi! link goExtraType Type
 hi! link goOperator Type
 call s:Hi('goPackage', s:p.package)
+
+" BarBar
+hi! link BufferCurrent TabLineSel
+hi! link BufferCurrentIndex TabLineSel
+hi! link BufferCurrentMod TabLineSel
+call s:Hi('BufferCurrentSign', s:p.error, s:p.tabLineSel)
+hi! link BufferInactive TabLine
+hi! link BufferInactiveIndex TabLine
+hi! link BufferInactiveIndex TabLine
+hi! link BufferInactiveMod TabLine
+hi! link BufferInactive TabLine
+call s:Hi('BufferInactiveSign', s:p.comment, s:p.statusLine)
