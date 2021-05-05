@@ -164,7 +164,7 @@ function darcula#Hi(group, fg, ...)
   endif
 endfunction
 
-call s:Hi('Normal', s:p.fg, s:p.bg)
+call s:Hi('Normal', s:p.fg)
 call s:Hi('Delimiter', s:p.fg)
 
 call s:Hi('Constant', s:p.constant, s:p.null, 'italic')
