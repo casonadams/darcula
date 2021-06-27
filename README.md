@@ -4,6 +4,10 @@
 
 :smiling_imp: A [Vim](https://www.vim.org/)/[Neovim](https://neovim.io/) color scheme reproduction of the official [JetBrains](https://www.jetbrains.com/) IDE Darcula theme
 
+## terminal colors
+
+See terminal directory
+
 ## install
 
 If you use a plugin manager, follow the traditional way.
